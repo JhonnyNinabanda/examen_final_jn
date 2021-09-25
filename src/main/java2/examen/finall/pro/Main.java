@@ -9,6 +9,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		Scanner Lector = new Scanner(System.in);
 		Scanner Lector1 = new Scanner(System.in);
+		Scanner Lector2 = new Scanner(System.in);
 		
 		int opcion =0 ;
 		String marca = "";
@@ -33,7 +34,7 @@ public class Main {
 		System.out.println("3. Actualizar Kilometraje");
 		System.out.println("4. Imprimir reporte");
 		System.out.println("5. SALIR");
-		opcion  = Lector.nextInt();
+		opcion  = Lector2.nextInt();
 		
 		
 		
