@@ -2,7 +2,7 @@ package examen.finall.pro;
 
 public class Auto {
 	
-	private String Marca;
+	private String marca;
 	private String modelo;
 	private int anioFabricacion;
 	private String placa;
@@ -11,7 +11,7 @@ public class Auto {
 	// 	CONSTRUCTOR
 	public Auto(String marca, String modelo, int anioFabricacion, String placa, double kilometraje) {
 		super();
-		Marca = marca;
+		this.marca = marca;
 		this.modelo = modelo;
 		this.anioFabricacion = anioFabricacion;
 		this.placa = placa;
@@ -20,10 +20,10 @@ public class Auto {
 	}
 	// METODOS SET Y GET
 	public String getMarca() {
-		return Marca;
+		return marca;
 	}
 	public void setMarca(String marca) {
-		Marca = marca;
+		marca = marca;
 	}
 	public String getModelo() {
 		return modelo;
@@ -49,6 +49,11 @@ public class Auto {
 	public void setKilometraje(double kilometraje) {
 		this.kilometraje = kilometraje;
 	}
+	@Override
+	public String toString() {
+		return "[Marca=" + marca + ", Modelo=" + modelo + ", Placa=" + placa + ", Kilometraje=" + kilometraje+ "]";
+	}
+	
 	
 
 }
